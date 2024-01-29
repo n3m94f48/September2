@@ -1,0 +1,15 @@
+mkdir example
+touch example/example{0..878}.txt
+mkdir home ; cd home
+mkdir user{1..5}
+cd user1
+mkdir files photos videos
+touch files/file{0..29}.txt
+touch photos/photo{0..178}.txt
+touch videos/videos{0..28}.txt
+cd ..
+cp -r user1/. user2
+cp -r user1/. user3
+cp -r user1/. user4
+cp -r user1/. user5
+
